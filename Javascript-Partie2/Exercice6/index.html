@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="/home/ibrahima/Images/image1.jpg" id="image1" onmouseover="changeImage(this)" onmouseout="changeImageReset(this)"/>
+      <img src="/home/ibrahima/Images/image2.jpg" id="image2" onmouseover="changeImage(this)" onmouseout="changeImageReset(this)"/>
+      <img src="/home/ibrahima/Images/image3.jpg" id="image3" onmouseover="changeImage(this)" onmouseout="changeImageReset(this)"/>
+      <img src="/home/ibrahima/Images/image4.jpg" id="image4" onmouseover="changeImage(this)" onmouseout="changeImageReset(this)"/>
+      <img src="/home/ibrahima/Images/image5.jpg" id="image5" onmouseover="changeImage(this)" onmouseout="changeImageReset(this)"/>
+    </div>
+    <script>
+    function changeImage(image){
+  image.src='/home/ibrahima/Images/'+image.id+'_2.jpg';
+}
+function changeImageReset(image){
+  image.src='/home/ibrahima/Images/'+image.id+'.jpg';
+}
+
+      </script>
+
+  </body>
+</html>

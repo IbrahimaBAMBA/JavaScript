@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <title></title>
+  </head>
+  <body>
+    <form>
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button id="valider" name="valider" onclick="donnee()">Valider</button>
+</form>
+    <script>
+    function donnee(){
+    var premier_nombre = document.getElementById('premier_nombre').value;
+    var deuxieme_nombre = document.getElementById('deuxieme_nombre').value;
+    if(isNaN(premier_nombre) == false && isNaN(deuxieme_nombre) == false && (deuxieme_nombre)!= 0) {
+      result = parseInt(premier_nombre)/ deuxieme_nombre;
+      alert(result);
+    }
+    }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="/home/ibrahima/Images/image1.jpg" onmouseover="changeImage(this);" id="image1"/> <!--(Troisième solution)-->
+      <img src="/home/ibrahima/Images/image2.jpg" onmouseover="changeImage(this);" id="image2"/>
+      <img src="/home/ibrahima/Images/image3.jpg" onmouseover="changeImage(this);" id="image3"/>
+      <img src="/home/ibrahima/Images/image4.jpg" onmouseover="changeImage(this);" id="image4"/>
+      <img src="/home/ibrahima/Images/image5.jpg" onmouseover="changeImage(this);" id="image5"/>
+    </div>
+
+  <script>
+      function changeImage(image){
+        //Grâce à console.log je peux afficher dans la console du texte
+        console.log('ça marche');
+        //On change l'attribut src de l'élément img
+     image.src='/home/ibrahima/Images/'+image.id+'_2.jpg';
+
+      }
+    </script>
+
+  </body>
+</html>
+
+<!--<body>
+    <div class="conteneur">
+      <img src="image1.jpg" onmouseover="changeImage(id);" id="image1"/> (Deuxième solution)
+      <img src="image2.jpg" onmouseover="changeImage(id);" id="image2"/>
+      <img src="image3.jpg" onmouseover="changeImage(id);" id="image3"/>
+      <img src="image4.jpg" onmouseover="changeImage(id);" id="image4"/>
+      <img src="image5.jpg" onmouseover="changeImage(id);" id="image5"/>
+    </div>
+    <script>
+     function changeImage(image) {
+       document.getElementById(image).src=image+'_2.jpg';
+     }
+    </script>
+  </body>-->
+
+  <!--<body>                                                             (Première solution)
+    <div class="conteneur">
+      <img src="image1.jpg" onmouseover="changeImage1();" id="image1"/>
+      <img src="image2.jpg" onmouseover="changeImage2();" id="image2"/>
+      <img src="image3.jpg" onmouseover="changeImage3();" id="image3"/>
+      <img src="image4.jpg" onmouseover="changeImage4();" id="image4"/>
+      <img src="image5.jpg" onmouseover="changeImage5();" id="image5"/>
+    </div>
+
+     <script>
+     function changeImage1(){
+       document.getElementById('image1').src='image1_2.jpg';
+     }
+     function changeImage2(){
+       document.getElementById('image2').src='image2_2.jpg';
+     }
+     function changeImage3(){
+       document.getElementById('image3').src='image3_2.jpg';
+     }
+     function changeImage4(){
+       document.getElementById('image4').src='image4_2.jpg';
+     }
+     function changeImage5(){
+       document.getElementById('image5').src='image5_2.jpg';
+     }
+     </script>
+  </body>-->

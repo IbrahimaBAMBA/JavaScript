@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+      <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+      <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+      <button  name="valider" id="valider" onclick="donnee();">Valider</button>
+</form>
+    <script>
+    function donnee(){
+      var nom=document.getElementById('nom').value;
+      var prenom=document.getElementById('prenom').value;
+      var ville=document.getElementById('ville').value;
+      if(nom && ville && prenom && isNaN(nom) == true && isNaN(prenom) == true && isNaN(ville) == true){
+
+      var result = 'Nom :' + nom + '\n' + 'Prénom :' + prenom + '\n' + 'Ville :' + ville;
+      alert(result);
+      }
+   } </script>
+  </body>
+</html>
+<!--  <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+    <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+    <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+    <button name="valider" id="valider" onClick="donnee();">Valider</button>
+    <script>
+    function donnee(){
+       var nom = document.getElementById('nom').value;
+       var prenom = document.getElementById('prenom').value;
+       var ville = document.getElementById('ville').value;
+       if(nom && ville && prenom && isNaN(nom) == true && isNaN(prenom) == true && isNaN(ville) == true)
+        {
+         var result = 'Nom : ' + nom +  '\n' + 'Prénom : ' + prenom + '\n' + 'Ville : ' + ville;
+         alert(result);
+        }
+     }
+    </script>-->
